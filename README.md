@@ -6,9 +6,12 @@ El repositorio contiene el código de **modelado, comparación de algoritmos, in
 y diseño operativo**, junto con los artefactos de resultados agregados y las figuras de la
 memoria.
 
-> **Autoría.** El estudiante es el único autor del código y único propietario de este
-> repositorio. No existe ningún *commit* de otro usuario distinto del autor.
-
+> **Autoría.** Este proyecto se desarrollo para la maestría de Inteligencia Artificial
+> de la Universidad Internacional de la Rioja (UNIR). Y los autores fueron:
+> - Juan Salazar: jucasamesa2@gmail.com,
+> - John Alvarado: 
+> - Miguel Mojica: chapid99@gmail.com
+**Director**: Joan Escamilla Fuster
 ---
 
 ## Objetivo
