@@ -1,0 +1,139 @@
+{
+  "alcance": "<45 alto riesgo -> mamografia proactiva vs estandar",
+  "endpoint_primario": "estadio al diagnostico (I-IIa temprano)",
+  "base_temprano_pct": 54.0,
+  "fuente_base": "CAC 2024 Fig 2.4 (I-IIa 54%)",
+  "alpha": 0.05,
+  "power": 0.8,
+  "casos_requeridos": [
+    {
+      "temprano_control%": 54.0,
+      "temprano_interv%": 62.0,
+      "delta_pp": 7.9999999999999964,
+      "casos_por_brazo": 597,
+      "casos_total": 1194
+    },
+    {
+      "temprano_control%": 54.0,
+      "temprano_interv%": 66.0,
+      "delta_pp": 12.0,
+      "casos_por_brazo": 261,
+      "casos_total": 522
+    },
+    {
+      "temprano_control%": 54.0,
+      "temprano_interv%": 70.0,
+      "delta_pp": 15.999999999999993,
+      "casos_por_brazo": 144,
+      "casos_total": 288
+    },
+    {
+      "temprano_control%": 54.0,
+      "temprano_interv%": 74.0,
+      "delta_pp": 19.999999999999996,
+      "casos_por_brazo": 90,
+      "casos_total": 180
+    },
+    {
+      "temprano_control%": 54.0,
+      "temprano_interv%": 78.0,
+      "delta_pp": 24.0,
+      "casos_por_brazo": 60,
+      "casos_total": 120
+    }
+  ],
+  "factibilidad_por_corte": [
+    {
+      "top_k%_<45": 1.0,
+      "VPP%": 0.7100000000000001,
+      "pool_anual": 13810,
+      "efecto_interv%": 66.0,
+      "casos/brazo_req": 261,
+      "leads/brazo_req": 36761,
+      "casos/brazo_por_ano": 49.0,
+      "anios_acum": 5.3
+    },
+    {
+      "top_k%_<45": 1.0,
+      "VPP%": 0.7100000000000001,
+      "pool_anual": 13810,
+      "efecto_interv%": 70.0,
+      "casos/brazo_req": 144,
+      "leads/brazo_req": 20282,
+      "casos/brazo_por_ano": 49.0,
+      "anios_acum": 2.9
+    },
+    {
+      "top_k%_<45": 1.0,
+      "VPP%": 0.7100000000000001,
+      "pool_anual": 13810,
+      "efecto_interv%": 74.0,
+      "casos/brazo_req": 90,
+      "leads/brazo_req": 12677,
+      "casos/brazo_por_ano": 49.0,
+      "anios_acum": 1.8
+    },
+    {
+      "top_k%_<45": 2.0,
+      "VPP%": 0.45599999999999996,
+      "pool_anual": 27620,
+      "efecto_interv%": 66.0,
+      "casos/brazo_req": 261,
+      "leads/brazo_req": 57237,
+      "casos/brazo_por_ano": 63.0,
+      "anios_acum": 4.1
+    },
+    {
+      "top_k%_<45": 2.0,
+      "VPP%": 0.45599999999999996,
+      "pool_anual": 27620,
+      "efecto_interv%": 70.0,
+      "casos/brazo_req": 144,
+      "leads/brazo_req": 31579,
+      "casos/brazo_por_ano": 63.0,
+      "anios_acum": 2.3
+    },
+    {
+      "top_k%_<45": 2.0,
+      "VPP%": 0.45599999999999996,
+      "pool_anual": 27620,
+      "efecto_interv%": 74.0,
+      "casos/brazo_req": 90,
+      "leads/brazo_req": 19737,
+      "casos/brazo_por_ano": 63.0,
+      "anios_acum": 1.4
+    },
+    {
+      "top_k%_<45": 5.0,
+      "VPP%": 0.22300000000000003,
+      "pool_anual": 69051,
+      "efecto_interv%": 66.0,
+      "casos/brazo_req": 261,
+      "leads/brazo_req": 117041,
+      "casos/brazo_por_ano": 77.0,
+      "anios_acum": 3.4
+    },
+    {
+      "top_k%_<45": 5.0,
+      "VPP%": 0.22300000000000003,
+      "pool_anual": 69051,
+      "efecto_interv%": 70.0,
+      "casos/brazo_req": 144,
+      "leads/brazo_req": 64574,
+      "casos/brazo_por_ano": 77.0,
+      "anios_acum": 1.9
+    },
+    {
+      "top_k%_<45": 5.0,
+      "VPP%": 0.22300000000000003,
+      "pool_anual": 69051,
+      "efecto_interv%": 74.0,
+      "casos/brazo_req": 90,
+      "leads/brazo_req": 40359,
+      "casos/brazo_por_ano": 77.0,
+      "anios_acum": 1.2
+    }
+  ],
+  "unidad_randomizacion_recomendada": "individual (paciente)",
+  "notas": "incidencia rara -> considerar acumular varios anos o endpoint de deteccion por 1000"
+}

@@ -1,0 +1,40 @@
+{
+  "modelo": "XGBoost-sin-avicena-sin-regional",
+  "features_eliminadas": [
+    "tiene_avicena",
+    "REG_1 REG BOGOTA",
+    "REG_2 REG CALI",
+    "REG_3 REG BARRANQUILLA",
+    "REG_4 REG BUCARAMANGA",
+    "REG_5 REG MEDELLIN",
+    "REG_6 REG CENTRO ORIENTE"
+  ],
+  "n_features": 52,
+  "best_params": {
+    "n_estimators": 372,
+    "learning_rate": 0.03937642774457204,
+    "max_depth": 6,
+    "min_child_weight": 10.428984163361713,
+    "subsample": 0.8887228912164657,
+    "colsample_bytree": 0.8666027078372297,
+    "gamma": 3.2523448716879892,
+    "reg_alpha": 0.7853150273233993,
+    "reg_lambda": 1.1162030607267182,
+    "scale_pos_weight": 3.512917598215352
+  },
+  "validacion": {
+    "modelo": "XGBoost-sin-avicena-sin-regional",
+    "AUC_PR": 0.03134195726203166,
+    "AUC_ROC": 0.8832197903702856,
+    "recall@top0.5%": 0.2537764350453172,
+    "recall@top1.0%": 0.31722054380664655,
+    "recall@top5.0%": 0.5347432024169184,
+    "recall@top10.0%": 0.6606243705941591
+  },
+  "bar_sin_avicena": {
+    "AUC_PR": 0.0375,
+    "recall@top10%": 0.703
+  },
+  "delta_auc_pr": -0.006158042737968342,
+  "delta_recall_top10": -0.04237562940584083
+}

@@ -1,0 +1,59 @@
+{
+  "restriccion": "tamizaje bienal garantizado en >=45",
+  "edad_corte_cribado": 45,
+  "casos_total": 993,
+  "casos_lt45": 230,
+  "casos_ge45": 763,
+  "pct_casos_lt45": 23.162134944612287,
+  "pct_casos_ge45": 76.83786505538771,
+  "estructura_edad": [
+    {
+      "banda": "18-39",
+      "mujeres": 1127420,
+      "%_pob": 46.7653,
+      "casos": 107,
+      "%_casos": 10.7754,
+      "tasa_banda%": 0.0095
+    },
+    {
+      "banda": "40-44",
+      "mujeres": 253614,
+      "%_pob": 10.5199,
+      "casos": 123,
+      "%_casos": 12.3867,
+      "tasa_banda%": 0.0485
+    },
+    {
+      "banda": "45-49",
+      "mujeres": 204586,
+      "%_pob": 8.4862,
+      "casos": 112,
+      "%_casos": 11.279,
+      "tasa_banda%": 0.0547
+    },
+    {
+      "banda": "50-59",
+      "mujeres": 348325,
+      "%_pob": 14.4485,
+      "casos": 228,
+      "%_casos": 22.9607,
+      "tasa_banda%": 0.0655
+    },
+    {
+      "banda": "60+",
+      "mujeres": 476862,
+      "%_pob": 19.7802,
+      "casos": 423,
+      "%_casos": 42.5982,
+      "tasa_banda%": 0.0887
+    }
+  ],
+  "subpob_lt45": {
+    "N": 1381034,
+    "casos": 230
+  },
+  "subpob_ge45": {
+    "N": 1029773,
+    "casos": 763
+  }
+}

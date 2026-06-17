@@ -1,0 +1,121 @@
+{
+  "modelo": "XGBoost-sin-avicena (regional conservada)",
+  "frac": 0.1,
+  "recall_global": 0.702920443101712,
+  "recall_estratificada": 0.6928499496475328,
+  "trade_off_recall": -0.010070493454179208,
+  "composicion_global": [
+    {
+      "index": "1 REG BOGOTA",
+      "%_leads": 31.42,
+      "%_poblacion": 36.612,
+      "sobre_repr": 0.858
+    },
+    {
+      "index": "6 REG CENTRO ORIENTE",
+      "%_leads": 11.383,
+      "%_poblacion": 18.382,
+      "sobre_repr": 0.619
+    },
+    {
+      "index": "2 REG CALI",
+      "%_leads": 15.467,
+      "%_poblacion": 13.567,
+      "sobre_repr": 1.14
+    },
+    {
+      "index": "4 REG BUCARAMANGA",
+      "%_leads": 11.005,
+      "%_poblacion": 11.963,
+      "sobre_repr": 0.92
+    },
+    {
+      "index": "3 REG BARRANQUILLA",
+      "%_leads": 15.355,
+      "%_poblacion": 11.734,
+      "sobre_repr": 1.309
+    },
+    {
+      "index": "5 REG MEDELLIN",
+      "%_leads": 15.369,
+      "%_poblacion": 7.742,
+      "sobre_repr": 1.985
+    }
+  ],
+  "composicion_estratificada": [
+    {
+      "index": "1 REG BOGOTA",
+      "%_leads": 36.613,
+      "%_poblacion": 36.612,
+      "sobre_repr": 1.0
+    },
+    {
+      "index": "6 REG CENTRO ORIENTE",
+      "%_leads": 18.382,
+      "%_poblacion": 18.382,
+      "sobre_repr": 1.0
+    },
+    {
+      "index": "2 REG CALI",
+      "%_leads": 13.567,
+      "%_poblacion": 13.567,
+      "sobre_repr": 1.0
+    },
+    {
+      "index": "4 REG BUCARAMANGA",
+      "%_leads": 11.963,
+      "%_poblacion": 11.963,
+      "sobre_repr": 1.0
+    },
+    {
+      "index": "3 REG BARRANQUILLA",
+      "%_leads": 11.734,
+      "%_poblacion": 11.734,
+      "sobre_repr": 1.0
+    },
+    {
+      "index": "5 REG MEDELLIN",
+      "%_leads": 7.741,
+      "%_poblacion": 7.742,
+      "sobre_repr": 1.0
+    }
+  ],
+  "recall_por_regional": [
+    {
+      "regional": "1 REG BOGOTA",
+      "positivos": 376,
+      "recall_global": 0.9096,
+      "recall_estratif": 0.9202
+    },
+    {
+      "regional": "6 REG CENTRO ORIENTE",
+      "positivos": 150,
+      "recall_global": 0.38,
+      "recall_estratif": 0.4667
+    },
+    {
+      "regional": "2 REG CALI",
+      "positivos": 139,
+      "recall_global": 0.6475,
+      "recall_estratif": 0.6403
+    },
+    {
+      "regional": "3 REG BARRANQUILLA",
+      "positivos": 122,
+      "recall_global": 0.582,
+      "recall_estratif": 0.5246
+    },
+    {
+      "regional": "4 REG BUCARAMANGA",
+      "positivos": 114,
+      "recall_global": 0.7456,
+      "recall_estratif": 0.7632
+    },
+    {
+      "regional": "5 REG MEDELLIN",
+      "positivos": 92,
+      "recall_global": 0.5761,
+      "recall_estratif": 0.3478
+    }
+  ]
+}

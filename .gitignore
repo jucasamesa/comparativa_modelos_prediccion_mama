@@ -1,0 +1,26 @@
+# Datos confidenciales — NUNCA versionar (información clínica de pacientes)
+*.parquet
+*.csv.gz
+bases/
+_datos/
+**/temp*
+
+# Modelos serializados y predicciones (derivados de datos confidenciales)
+*.joblib
+*.pkl
+*.npz
+
+# Documento generado (.docx) — entregable de la memoria, no código
+*.docx
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+*.egg-info/
+
+# Sistema
+.DS_Store
+Thumbs.db

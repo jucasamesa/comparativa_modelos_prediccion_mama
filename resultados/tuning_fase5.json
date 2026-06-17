@@ -1,0 +1,132 @@
+{
+  "mejor_modelo": "LGB-spw1-native",
+  "best_params_smote": {
+    "under_ratio": 0.04487858573725298,
+    "smote_ratio": 0.4300733288106988,
+    "n_estimators": 565,
+    "learning_rate": 0.043406770118894,
+    "num_leaves": 115,
+    "max_depth": 7,
+    "min_child_samples": 53,
+    "subsample": 0.885297914889198,
+    "colsample_bytree": 0.8803925243084487,
+    "reg_alpha": 0.17583640270008521,
+    "reg_lambda": 1.2130221181165162,
+    "min_split_gain": 0.24689779818219537
+  },
+  "cv_auc_pr_smote_tuned": 0.03123084766980913,
+  "overfit_gap": 0.023584165899339586,
+  "spw_sweep": [
+    [
+      1,
+      0.03048820689791626
+    ],
+    [
+      5,
+      0.024349986354124952
+    ],
+    [
+      10,
+      0.022486361702243985
+    ],
+    [
+      25,
+      0.01825435831718034
+    ],
+    [
+      48,
+      0.007138121094345258
+    ],
+    [
+      100,
+      0.005379932572026222
+    ],
+    [
+      250,
+      0.002275573591267795
+    ]
+  ],
+  "mejor_spw": 1,
+  "validacion_fase5": [
+    {
+      "modelo": "LGB-spw1-native",
+      "AUC_PR": 0.03463115945090086,
+      "AUC_ROC": 0.8879421471623758,
+      "recall@top0.5%": 0.24370594159113795,
+      "recall@top1.0%": 0.30614300100704933,
+      "recall@top5.0%": 0.5468277945619335,
+      "recall@top10.0%": 0.6727089627391742
+    },
+    {
+      "modelo": "LGB-SMOTE-tuned",
+      "AUC_PR": 0.03130871584724926,
+      "AUC_ROC": 0.8956019421792868,
+      "recall@top0.5%": 0.25075528700906347,
+      "recall@top1.0%": 0.31822759315206445,
+      "recall@top5.0%": 0.5438066465256798,
+      "recall@top10.0%": 0.6676737160120846
+    }
+  ],
+  "baseline_fase4_auc_pr": 0.0335,
+  "shap_contribucion": {
+    "edad": 1.386482,
+    "n_consultas_T": 1.029143,
+    "REG_1 REG BOGOTA": 0.224599,
+    "tiene_avicena": 0.180486,
+    "tiempo_afiliacion": 0.147299,
+    "IMC": 0.115941,
+    "PERIMETRO_ABDOMINAL": 0.105586,
+    "TALLA": 0.098277,
+    "proxy_menopausia": 0.098101,
+    "MENARQUIA": 0.094874,
+    "TENSION_ARTERIAL_SISTOLE": 0.083235,
+    "REG_3 REG BARRANQUILLA": 0.075622,
+    "TENSION_ARTERIAL_DIASTOLE": 0.070798,
+    "REG_5 REG MEDELLIN": 0.064799,
+    "COLESTEROL_LDL": 0.057774,
+    "remision_gine": 0.050761,
+    "TRIGLICERIDOS": 0.038938,
+    "COLESTEROL_HDL": 0.036411,
+    "COLESTEROL_TOTAL": 0.035814,
+    "hta": 0.033773,
+    "REG_4 REG BUCARAMANGA": 0.028022,
+    "riesgo_alto": 0.027781,
+    "REG_6 REG CENTRO ORIENTE": 0.024187,
+    "HEMOGLOBINA_GLICOSILADA": 0.021734,
+    "delta_COLESTEROL_LDL": 0.020326,
+    "remision_endo": 0.014899,
+    "dm": 0.013415,
+    "REG_2 REG CALI": 0.01217,
+    "delta_TRIGLICERIDOS": 0.010262,
+    "delta_COLESTEROL_TOTAL": 0.007972,
+    "biopsia": 0.007199,
+    "ZONA_U": 0.006786,
+    "MENARQUIA_disponible": 0.005997,
+    "ZONA_R": 0.005894,
+    "PERIMETRO_ABDOMINAL_disponible": 0.005749,
+    "delta_HEMOGLOBINA_GLICOSILADA_disponible": 0.005564,
+    "delta_COLESTEROL_TOTAL_disponible": 0.005492,
+    "delta_HEMOGLOBINA_GLICOSILADA": 0.005315,
+    "delta_COLESTEROL_HDL": 0.004731,
+    "delta_TRIGLICERIDOS_disponible": 0.004308,
+    "cancer": 0.004239,
+    "FUMA_O_HA_FUMADO": 0.00407,
+    "COLESTEROL_LDL_disponible": 0.003714,
+    "delta_COLESTEROL_LDL_disponible": 0.003617,
+    "TENSION_ARTERIAL_SISTOLE_disponible": 0.002789,
+    "delta_COLESTEROL_HDL_disponible": 0.002748,
+    "imc_disponible": 0.002037,
+    "riesgo_alto_disponible": 0.001883,
+    "HEMOGLOBINA_GLICOSILADA_disponible": 0.001398,
+    "TALLA_disponible": 0.001027,
+    "COLESTEROL_TOTAL_disponible": 0.000614,
+    "COCINA_RECINTO_CERRADO": 0.000544,
+    "familiar_cancer_mama": 0.000508,
+    "ES_HA_SIDO_FUMADOR_PASIVO": 0.000378,
+    "TRIGLICERIDOS_disponible": 0.000206,
+    "familiar_cancer": 5.4e-05,
+    "familiar_mama": 4e-06,
+    "COLESTEROL_HDL_disponible": 0.0,
+    "TENSION_ARTERIAL_DIASTOLE_disponible": 0.0
+  }
+}
