@@ -1,0 +1,39 @@
+{
+  "modelo": "RandomForest-tuned",
+  "variante": "impute (59 feats)",
+  "best_params": {
+    "n_estimators": 481,
+    "max_depth": 22,
+    "min_samples_leaf": 8,
+    "max_features": "log2",
+    "class_weight": null,
+    "max_samples": 0.6630779339439908
+  },
+  "cv_auc_pr": 0.09581579582025408,
+  "validacion": {
+    "modelo": "RandomForest-tuned",
+    "AUC_PR": 0.03367121819052378,
+    "AUC_ROC": 0.8624611069359077,
+    "recall@top0.5%": 0.25075528700906347,
+    "recall@top1.0%": 0.3031218529707956,
+    "recall@top5.0%": 0.49345417925478346,
+    "recall@top10.0%": 0.6112789526686808
+  },
+  "top15_importancia_impureza": {
+    "n_consultas_T": 0.23197,
+    "IMC": 0.10366,
+    "edad": 0.09256,
+    "TALLA": 0.06669,
+    "tiempo_afiliacion": 0.06254,
+    "TENSION_ARTERIAL_SISTOLE": 0.0508,
+    "TENSION_ARTERIAL_DIASTOLE": 0.04384,
+    "PERIMETRO_ABDOMINAL": 0.03732,
+    "COLESTEROL_TOTAL": 0.0302,
+    "TRIGLICERIDOS": 0.02861,
+    "COLESTEROL_HDL": 0.02838,
+    "COLESTEROL_LDL": 0.02695,
+    "REG_1 REG BOGOTA": 0.01737,
+    "HEMOGLOBINA_GLICOSILADA": 0.01342,
+    "remision_gine": 0.01153
+  }
+}

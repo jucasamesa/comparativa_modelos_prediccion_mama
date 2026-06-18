@@ -20,8 +20,9 @@ A diferencia de los modelos de *diagnóstico* (sobre imagen mamográfica) o de l
 clásicos de riesgo individual (Gail, Tyrer-Cuzick), este proyecto adopta un enfoque de
 **incidencia**: identificar, entre las mujeres actualmente **sin diagnóstico**, a quienes
 presentan mayor probabilidad de desarrollar un **primer** cáncer de mama en el **año
-siguiente**, para orientar una intervención proactiva de tamización evaluada mediante un
-ensayo A/B.
+siguiente**, para orientar una intervención proactiva de tamización. La evaluación de impacto
+de dicha intervención mediante un ensayo A/B se plantea como **trabajo futuro**, en una fase
+posterior a este TFE.
 
 El problema se formaliza como una **clasificación binaria con desbalanceo extremo**
 (tasa de evento ≈ 0,03 %; razón negativo:positivo ≈ 3.000:1) sobre pares temporales
@@ -38,9 +39,10 @@ El problema se formaliza como una **clasificación binaria con desbalanceo extre
   los antecedentes familiares no aportan señal por una limitación de construcción del *proxy*
   (no por irrelevancia biológica), y los indicadores de disponibilidad de laboratorio resultan
   redundantes con el manejo nativo del *NaN*.
-- **Diseño operativo:** asignación estratificada por regional para equidad geográfica, y
-  dimensionamiento de un ensayo A/B sobre la subpoblación < 45 años (donde el modelo aporta
-  valor incremental frente al tamizaje bienal por edad).
+- **Diseño operativo:** punto de operación (curva recall/NNS) y asignación estratificada por
+  regional para equidad geográfica. Se delimita la subpoblación < 45 años como aquella donde el
+  modelo aporta valor incremental frente al tamizaje bienal por edad; su evaluación mediante un
+  ensayo A/B queda como trabajo futuro.
 
 ## Estructura del repositorio
 
@@ -55,8 +57,9 @@ scripts/        Generadores de notebooks y análisis (modelado, tuning, SHAP, op
   build_nb_estratificado.py Asignación estratificada (equidad geográfica)
   build_nb_umbral.py       Curva de operación del programa
   build_nb_edad.py         Estructura por edad y rol incremental del modelo
-  build_nb_abtest.py       Dimensionamiento del ensayo A/B
+  build_nb_abtest.py       Dimensionamiento preliminar del ensayo A/B (trabajo futuro)
   build_nb_shap.py         Interpretabilidad SHAP del modelo ganador
+  build_nb_rf.py           Random Forest (ensamble por bagging) — cierre de la comparativa
   variantes_modelo.py      Variantes de imputación (mediana vs NaN nativo)
   gen_doc_figs.py          Generación de las figuras de la memoria
 utils/
@@ -78,10 +81,12 @@ entorno virtual dedicado.
 2. **Ingeniería de características** con cohorte ≥ 18 años, *winsorización* a cotas de
    plausibilidad clínica y codificación; dos variantes de imputación (mediana + indicador para
    modelos lineales; *NaN* nativo + indicador para árboles, por la naturaleza MNAR del faltante).
-3. **Comparación de modelos** (regresión logística, LightGBM, XGBoost) bajo distintas
-   estrategias de desbalanceo, con validación cruzada `GroupKFold` y validación temporal final.
+3. **Comparación de modelos** (regresión logística, Random Forest, LightGBM, XGBoost) bajo
+   distintas estrategias de desbalanceo, con validación cruzada `GroupKFold` y validación
+   temporal final.
 4. **Tuning** con Optuna optimizando AUC-PR; **interpretabilidad** con SHAP.
-5. **Diseño operativo**: punto de operación, equidad geográfica y dimensionamiento del A/B.
+5. **Diseño operativo**: punto de operación y equidad geográfica (el ensayo A/B se plantea como
+   trabajo futuro, fuera del alcance de este TFE).
 
 ## Reproducibilidad y datos
 

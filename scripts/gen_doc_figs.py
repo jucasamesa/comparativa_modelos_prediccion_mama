@@ -40,11 +40,12 @@ modelos = [
     ('XGBoost-spw (sin tunear)', 0.030894),
     ('LGB-SMOTE (tuneado F5)', 0.031309),
     ('LightGBM-SMOTE (F4)', 0.033451),
+    ('Random Forest (tuneado)', 0.033671),
     ('LightGBM spw=1 (F5, ex-ganador)', 0.034631),
     ('XGBoost tuneado (F5b, GANADOR)', 0.0380),
 ]
 nom = [m[0] for m in modelos]; val = [m[1] for m in modelos]
-colors = ['#999999']*5 + ['#4C72B0']*3 + ['#55A868','#C44E52']
+colors = ['#999999']*5 + ['#4C72B0']*3 + ['#DD8452','#55A868','#C44E52']
 fig, ax = plt.subplots(figsize=(8, 5))
 b = ax.barh(nom, val, color=colors); ax.invert_yaxis()
 ax.set_xlabel('AUC-PR (validacion temporal 2023->2024)')
@@ -58,6 +59,7 @@ curvas = {
     'XGBoost tuneado (F5b)': [0.266, 0.325, 0.563, 0.704],
     'LightGBM spw=1 (F5)':   [0.2437, 0.3061, 0.5468, 0.6727],
     'LightGBM-SMOTE (F4)':   [0.2477, 0.3333, 0.5559, 0.6777],
+    'Random Forest (tuneado)': [0.2508, 0.3031, 0.4935, 0.6113],
     'XGBoost-spw (F4)':      [0.2437, 0.3021, 0.5277, 0.6445],
     'LR-SMOTE (F4)':         [0.2024, 0.2679, 0.5015, 0.6516],
 }

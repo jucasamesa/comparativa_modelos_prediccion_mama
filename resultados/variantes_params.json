@@ -1,0 +1,150 @@
+{
+  "cohorte_edad_min": 18,
+  "impute_vars": [
+    "COLESTEROL_TOTAL",
+    "COLESTEROL_HDL",
+    "COLESTEROL_LDL",
+    "TRIGLICERIDOS",
+    "HEMOGLOBINA_GLICOSILADA",
+    "TENSION_ARTERIAL_SISTOLE",
+    "TENSION_ARTERIAL_DIASTOLE",
+    "TALLA",
+    "PERIMETRO_ABDOMINAL",
+    "MENARQUIA",
+    "riesgo_alto",
+    "IMC"
+  ],
+  "medians_train_ge18": {
+    "COLESTEROL_TOTAL": 189.0,
+    "COLESTEROL_HDL": 48.2,
+    "COLESTEROL_LDL": 108.0,
+    "TRIGLICERIDOS": 137.0,
+    "HEMOGLOBINA_GLICOSILADA": 6.2,
+    "TENSION_ARTERIAL_SISTOLE": 116.0,
+    "TENSION_ARTERIAL_DIASTOLE": 70.0,
+    "TALLA": 158.0,
+    "PERIMETRO_ABDOMINAL": 87.0,
+    "MENARQUIA": 12.0,
+    "riesgo_alto": 0.0,
+    "IMC": 26.037493991347535
+  },
+  "n_consultas_cap": 53.0,
+  "zona_moda": "U",
+  "clip_bounds": {
+    "edad": [
+      18,
+      110
+    ],
+    "IMC": [
+      12,
+      70
+    ],
+    "PESO": [
+      30,
+      250
+    ],
+    "TALLA": [
+      120,
+      210
+    ],
+    "PERIMETRO_ABDOMINAL": [
+      40,
+      200
+    ],
+    "MENARQUIA": [
+      8,
+      20
+    ],
+    "TENSION_ARTERIAL_SISTOLE": [
+      70,
+      250
+    ],
+    "TENSION_ARTERIAL_DIASTOLE": [
+      40,
+      150
+    ],
+    "COLESTEROL_TOTAL": [
+      50,
+      500
+    ],
+    "COLESTEROL_HDL": [
+      10,
+      150
+    ],
+    "COLESTEROL_LDL": [
+      10,
+      400
+    ],
+    "TRIGLICERIDOS": [
+      20,
+      2000
+    ],
+    "HEMOGLOBINA_GLICOSILADA": [
+      3,
+      20
+    ]
+  },
+  "log_vars": [],
+  "geografia": "solo DESCRIP_REGIONAL (REG_*); cod_municip y anio eliminados",
+  "feature_columns": [
+    "TENSION_ARTERIAL_SISTOLE",
+    "TENSION_ARTERIAL_DIASTOLE",
+    "TALLA",
+    "PERIMETRO_ABDOMINAL",
+    "MENARQUIA",
+    "COCINA_RECINTO_CERRADO",
+    "FUMA_O_HA_FUMADO",
+    "ES_HA_SIDO_FUMADOR_PASIVO",
+    "COLESTEROL_TOTAL",
+    "COLESTEROL_HDL",
+    "COLESTEROL_LDL",
+    "HEMOGLOBINA_GLICOSILADA",
+    "TRIGLICERIDOS",
+    "delta_COLESTEROL_TOTAL",
+    "delta_COLESTEROL_HDL",
+    "delta_COLESTEROL_LDL",
+    "delta_HEMOGLOBINA_GLICOSILADA",
+    "delta_TRIGLICERIDOS",
+    "hta",
+    "dm",
+    "biopsia",
+    "cancer",
+    "remision_gine",
+    "remision_endo",
+    "riesgo_alto",
+    "n_consultas_T",
+    "familiar_mama",
+    "familiar_cancer_mama",
+    "familiar_cancer",
+    "tiempo_afiliacion",
+    "edad",
+    "proxy_menopausia",
+    "tiene_avicena",
+    "COLESTEROL_TOTAL_disponible",
+    "COLESTEROL_HDL_disponible",
+    "COLESTEROL_LDL_disponible",
+    "TRIGLICERIDOS_disponible",
+    "HEMOGLOBINA_GLICOSILADA_disponible",
+    "delta_COLESTEROL_TOTAL_disponible",
+    "delta_COLESTEROL_HDL_disponible",
+    "delta_COLESTEROL_LDL_disponible",
+    "delta_HEMOGLOBINA_GLICOSILADA_disponible",
+    "delta_TRIGLICERIDOS_disponible",
+    "TENSION_ARTERIAL_SISTOLE_disponible",
+    "TENSION_ARTERIAL_DIASTOLE_disponible",
+    "TALLA_disponible",
+    "IMC",
+    "imc_disponible",
+    "PERIMETRO_ABDOMINAL_disponible",
+    "MENARQUIA_disponible",
+    "riesgo_alto_disponible",
+    "ZONA_R",
+    "ZONA_U",
+    "REG_1 REG BOGOTA",
+    "REG_2 REG CALI",
+    "REG_3 REG BARRANQUILLA",
+    "REG_4 REG BUCARAMANGA",
+    "REG_5 REG MEDELLIN",
+    "REG_6 REG CENTRO ORIENTE"
+  ]
+}
