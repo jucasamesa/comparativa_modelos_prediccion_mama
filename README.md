@@ -9,7 +9,7 @@ memoria.
 > **Autoría.** Este proyecto se desarrollo para la maestría de Inteligencia Artificial
 > de la Universidad Internacional de la Rioja (UNIR). Y los autores fueron:
 > - Juan Salazar: jucasamesa2@gmail.com,
-> - John Alvarado: 
+> - John Alvarado: John.alvaradocristancho@gmail.com
 > - Miguel Mojica: chapid99@gmail.com
 **Director**: Joan Escamilla Fuster
 ---
